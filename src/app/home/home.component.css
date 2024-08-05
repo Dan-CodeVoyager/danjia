@@ -1,0 +1,131 @@
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.grid-item {
+    /*border: 1px solid rgb(52, 45, 45);*/
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Papyrus", fantasy;
+    background-color: aliceblue;
+    /*font-style: italic;*/
+}
+
+/* About Me stely setting */
+.button {
+    display: inline-block;
+    border-radius: 0px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    font-family: "Papyrus", fantasy;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover{
+  background-color: rgb(213, 233, 250);
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+a {
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* 导航栏-下拉列表 stely setting */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(51, 35, 35);
+  min-width: 160px;
+  /*padding: 12px 16px;*/
+  z-index: 1;
+  color: white;
+  font-size: 23px;
+  font-family: "Papyrus", fantasy;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* 导航栏菜单列表 */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 106.3%;
+  background-color: rgb(213, 233, 250);
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+  background-color: #23282a;
+  color: white;
+}
+
+.article {
+  font-family: 'serif', Didot;
+  font-size: 20px;
+  text-align: justify;
+  margin-right: 2cm;
+}

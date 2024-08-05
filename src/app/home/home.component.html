@@ -1,0 +1,63 @@
+
+
+    <section class="sticky">
+        <section class="grid-container">		
+            <section class="dropdown">
+				<button class="button"><span>About Me</span></button>
+				<section class="dropdown-content">
+				<ul>
+					@for (nav of navList; track nav.navItem) {
+						<li>
+                            @if (nav.navItem == "My Music") {<a routerLink="audio">{{nav.navItem}}</a>}
+                            @else {<a href={{nav.link}}>{{nav.navItem}}</a>}
+						</li>
+					}
+				</ul>
+				</section>
+			</section>
+            <section class="grid-item"><a routerLink="/">Dan Jia's World</a></section>
+            <button class="button"><a routerLink="cmdb">Contact</a></button>		
+        </section>
+    </section>
+	
+    <p style="font-size: 23px; font-family: 'cursive', Snell Roundhand; text-align: center;">
+        <a href="/assets/pre.pdf">Life always finds its way</a>
+    </p>
+        
+    <hr style="width:70%">
+
+    <section>
+        <div class="left">
+            <img class="img" [src]="home_img" />
+        </div>
+
+        <div class="right">
+            <article class="article">
+                <p>
+                    I am from this historic and beautiful city, Taiyuan City, the capital und largest city of Shanxi Provice.
+                    It has a really intersting nickname called "Dragon City".
+                </p>
+                <p>
+                    While it may not have many famous modern buildings, it boasts the highest number of ancient buildings in China.
+                    It is situated on a plateau, with mountain ranges on both the east and west sides. 
+                    These mountains not only block the hot air currents in summer but also keep floods at bay beyond the mountains.
+                    The Fenhe River runs from north to south through Taiyuan, 
+                    profoundly influencing its history, culture, politics, and economy.
+                </p>
+                <p>
+                    Do you want to explore more information about my hometown? <a routerLink="homeimages">Let's go!</a>
+                </p>
+            </article>
+        
+        </div>
+    </section>
+
+    
+
+
+    
+
+    
+
+    
+

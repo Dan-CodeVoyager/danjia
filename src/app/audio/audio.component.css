@@ -1,0 +1,54 @@
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3cm;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: black;
+}
+
+input[type="text"] {
+    border: solid 1px var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 8px;
+    margin-left: 35px;
+    display: inline-block;
+    width: 30%;
+}
+
+.music-listing {
+    /* 设置一个足够高的高度, 让页面滚动起来 */
+    /* height: 2000px; */
+    height: 2000px;
+    
+    /* 设置背景图片 */
+    background-image: /* linear-gradient(rgba(113, 158, 221, 0.814), #d2d3c7cb),*/ url(/assets/violin.jpeg);
+    
+    /* 设置图片背景平铺模式 */
+    background-repeat: no-repeat;
+    
+    /* 超大背景图片定位 */
+    background-position: center top;
+    
+    /* 背景固定 */
+    /* background-attachment: fixed; */
+    
+    /* 背景滚动 */
+    background-attachment: scroll;
+}
+
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(00px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+}

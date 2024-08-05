@@ -1,0 +1,6 @@
+<section class="listing">
+    <img class="listing-photo" [src]="music.photo" alt="Exterior photo of {{music.name}}">
+    <h2 class="listing-name">{{ music.name }}</h2>
+    <!--<a [href]="music.address">Play it</a>-->
+    <audio controls [src]="music.address"></audio>
+</section>

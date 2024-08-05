@@ -1,0 +1,18 @@
+<section class="music-listing">
+
+  <h1 style="margin-top: 3cm;">I hope you guys can enjoy it!</h1>
+
+    <section>
+      <form>
+        <input id="au" type="text" placeholder="Filter by music name" #filter />
+        <button class="primary" type="buttion" (click)="filterResults(filter.value)">Search</button >
+      </form>
+    </section>
+
+    <section class="results">
+       <app-music *ngFor="let music of musicList" [music]="music"></app-music>
+    </section>    
+
+</section>
+
+

@@ -1,0 +1,43 @@
+<header class="brand-name">
+    <h2 class="section-heading">CONTACT ME</h2>
+</header>
+
+<section class="listing-features">
+    <img class="listing-photo" src="/assets/home2.jpg">
+    <h2 class="section-heading">I'm so pleased YOU want to know me 🌻.</h2>
+    <ul>
+        <li>Master Informatiker Dan Jia</li>
+        <li>Good at: 
+            <ul>
+                <li class="item">Learning Algorithms and Deep Learning Models</li>
+                <li class="item">Data Science</li>
+                <li class="item">Programming</li>
+            </ul>
+        <li>E-mail: <a class="sent_to_dan" href="mailto:berlyjd1037@gmail.com"> berlyjd1037&#64;gmail.com </a></li>
+        <li>Tel.: + 49 15206069326</li>
+    </ul>
+</section>
+
+
+<section class="listing-contact">
+
+    <h1> Do you want to be added to my friend database? </h1>
+    <p style="font-size: 20px;"> DON'T hesitate to give me some information about you and click the GO Button! </p>
+
+    <form [formGroup]="subForm" (submit)="submitApplication()">
+        <label for="first-name">First Name
+            <input id="first-name" type="text" formControlName="firstName">
+        </label>
+
+        <label for="last-name">Last Name
+            <input id="last-name" type="text" formControlName="lastName">
+        </label>
+
+        <label for="email">E-Mail
+            <input id="email" type="text" formControlName="email" placeholder="example@gmail.com">
+        </label>
+
+        <button type="submit" class="primary">GO RIGHT NOW</button>
+    </form>
+
+</section>
