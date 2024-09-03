@@ -5,15 +5,15 @@
 
 
 ## Presentation
-### Home Page
+### (1) Home Page
 ![image](https://github.com/Dan-CodeVoyager/danjia/blob/master/Home%20Page.png)  
 
 
-### Music Component Page
+### (2) Music Component Page
 ![image](https://github.com/Dan-CodeVoyager/danjia/blob/master/Music%20Component%20Page.png)  
 
 
-### Contact Component Page
+### (3) Contact Component Page
 ![image](https://github.com/Dan-CodeVoyager/danjia/blob/master/Contact%20Compomnent%20Page.png)  
 
 
